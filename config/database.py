@@ -1,21 +1,21 @@
-python
+
 import os
 import psycopg2
 
-# BAD: Hardcoded database credentials (will trigger secret scanner)
+
 DATABASE_CONFIG = {
     'host': 'prod-db.company.com',
     'database': 'production',
     'user': 'admin',
-    'password': 'SuperSecret123!@#',  # This will be detected
+    'password': 'SuperSecret123!@#',  
     'port': 5432
 }
 
-# BAD: AWS credentials hardcoded
+
 AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
 AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
-# BAD: API keys
+
 STRIPE_SECRET_KEY = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
 GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnopqrstuvwxyz"
 
