@@ -1,4 +1,4 @@
-python
+
 import os
 import shutil
 from flask import request, send_file
@@ -16,33 +16,28 @@ class FileUploader:
         file = request.files['file']
         filename = file.filename
         
-        # BAD: No file type validation
-        # BAD: Path traversal vulnerability
+
         file_path = os.path.join(self.upload_dir, filename)
         
-        # BAD: No file size limits
         file.save(file_path)
         
-        # BAD: Executing uploaded files
         if filename.endswith('.py'):
-            os.system(f"python {file_path}")  # Command injection risk
+            os.system(f"python {file_path}") 
             
         return f"File {filename} uploaded successfully"
     
     def download_file(self, filename):
         """Download file with path traversal vulnerability."""
         
-        # BAD: No path validation - allows ../../../etc/passwd
+       
         file_path = os.path.join(self.upload_dir, filename)
         
-        # BAD: No access control
+     
         return send_file(file_path)
     
     def delete_file(self, filename):
         """Delete file with insufficient validation."""
         
-        # BAD: No authorization check
-        # BAD: Potential path traversal
         file_path = os.path.join(self.upload_dir, filename)
         
         if os.path.exists(file_path):
