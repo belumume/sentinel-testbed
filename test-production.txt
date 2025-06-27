@@ -1,0 +1,4 @@
+Testing production deployment with full scanner layer.
+
+API_KEY=sk-1234567890abcdef1234567890abcdef12345678
+GITHUB_TOKEN=ghp_1234567890abcdef1234567890abcdef123456
