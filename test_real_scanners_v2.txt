@@ -1,0 +1,9 @@
+TEST REAL SCANNERS v2.0
+
+All scanners should now be using real tools only:
+
+1. Secret Scanner: TruffleHog ONLY (no fallback patterns)
+2. Vulnerability Scanner: OSV API ONLY (no fallback database)
+3. AI Reviewer: Bedrock ONLY (no simulation)
+
+NO MORE FAKE/SIMULATED/FALLBACK DATA!
