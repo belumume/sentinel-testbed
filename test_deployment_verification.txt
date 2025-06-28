@@ -1,0 +1,8 @@
+# Deployment Verification Test
+# This file contains a simple secret to test if the professional scanner is running
+
+# Simple AWS credential for testing
+AWS_ACCESS_KEY = "AK1234567890ABCDEF"
+AWS_SECRET_KEY = "abcdefghijklmnopqrstuvwxyz1234567890"
+
+# If the professional scanner is running, it should detect these secrets
