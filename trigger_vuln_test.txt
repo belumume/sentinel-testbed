@@ -1,0 +1,4 @@
+Test file to trigger vulnerability scanner debugging.
+
+The tools are available but have dependency issues.
+Need to fix chardet/charset_normalizer dependency issues.
