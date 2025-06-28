@@ -1,0 +1,11 @@
+# Extremely vulnerable Python packages for testing
+Django==1.11.29  # Extremely old and vulnerable
+requests==2.6.0  # Old version with many vulnerabilities
+Pillow==4.3.0  # Old version with critical vulnerabilities
+PyYAML==3.10  # Vulnerable to arbitrary code execution
+urllib3==1.21.1  # Old version with security issues
+Jinja2==2.6  # Vulnerable to sandbox escape
+Flask==0.10.1  # Extremely old and vulnerable
+SQLAlchemy==0.9.8  # Old version with SQL injection risks
+cryptography==1.7.1  # Old version with cryptographic weaknesses
+paramiko==1.15.0  # Old version with authentication bypass
