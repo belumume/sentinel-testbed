@@ -2,4 +2,3 @@
 
 - Testing the Sentinel workflow.
 
-API_KEY = "AKIAIOSFODNN7EXAMPLE"
