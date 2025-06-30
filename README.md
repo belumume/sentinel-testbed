@@ -1,3 +1,3 @@
-This is a test repository for DevSecOps Sentinel.
+- This is a test repository for DevSecOps Sentinel.
 
-Testing the Sentinel workflow.
+- Testing the Sentinel workflow.
